@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { toast } from "sonner";
 
 import { Reveal } from "@/components/site/Reveal";
 
@@ -97,7 +96,6 @@ function Apply() {
                 onSubmit={(e) => {
                   e.preventDefault();
                   setSent(true);
-                  toast("Application", { description: "Tell us where you are starting from" });
                 }}
               >
                 <label className="block">
